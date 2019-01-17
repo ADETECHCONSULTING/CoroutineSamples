@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.util.Log
 import fr.traore.adama.coroutinesample.R
 import fr.traore.adama.coroutinesample.TmdbViewModel
+import fr.traore.adama.coroutinesample.toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         tmdbViewModel.fetchMovies()
 
         tmdbViewModel.popularMoviesLiveData.observe(this, Observer {
-            Log.d("Observable", "Count "+tmdbViewModel.popularMoviesLiveData.value?.size)
+            toast(tmdbViewModel.popularMoviesLiveData.value?.get(0)?.title!!)
         })
     }
 }
