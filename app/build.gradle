@@ -9,6 +9,7 @@ def retrofit2_version = "2.5.0"
 def okhttp3_version = "3.12.0"
 def kotlinCoroutineVersion = "1.0.1"
 def picassoVersion = "2.71828"
+def lifecycle_version = "2.0.0"
 
 android {
     compileSdkVersion 28
@@ -72,5 +73,8 @@ dependencies {
     //Kotlin Coroutines
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinCoroutineVersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutineVersion"
+
+    //For ViewModelProviders
+    implementation "android.arch.lifecycle:extensions:1.1.1"
 
 }
