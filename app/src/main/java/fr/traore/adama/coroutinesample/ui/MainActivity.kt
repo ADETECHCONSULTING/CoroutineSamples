@@ -1,7 +1,8 @@
-package fr.traore.adama.coroutinesample
+package fr.traore.adama.coroutinesample.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import fr.traore.adama.coroutinesample.R
 
 class MainActivity : AppCompatActivity() {
 
